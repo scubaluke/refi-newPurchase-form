@@ -1,7 +1,15 @@
 // SET AFID 
-document.querySelector('#AFID').value = document.referrer.split('AFID=')[1] || '465368'
+// document.querySelector('#AFID').value = document.referrer.split('AFID=')[1] || '465368'
+document.querySelector('#AFID').value = Array.from(window.location.search.replace('?zipcode=', '').replace('&AFID=', '')).slice(5).join('') || '465368'
+
+
+
 // SET ZIP CODE 
-document.querySelector('#zip_code').value = window.location.search.split('zipcode=')[1] || '55555'
+// document.querySelector('#zip_code').value = window.location.search.split('zipcode=')[1].splice(0,4) || '55555'
+// Array.from(window.location.search.replace('?zipcode=', '')).splice(0,4).join('')
+
+document.querySelector('#zip_code').value =  Array.from(window.location.search.replace('?zipcode=', '')).splice(0,4).join('')
+ || '55555'
 
 // THE  FORM ELEMENT 
 const form = document.querySelector('#lp_form')
@@ -120,7 +128,6 @@ function validatePhoneNumber(phoneNum)
     return check.test(phoneNum);
 }
 function simplifyPhone(number) {
-    console.log(number.replace(/\D/g, ''));
     return number.replace(/\D/g, '')
 }
 

@@ -137,7 +137,6 @@ function sendSubmission(e) {
         return check.test(phoneNum);
     }
     function simplifyPhone(number) {
-        console.log(number.replace(/\D/g, ''));
         return number.replace(/\D/g, '')
     }
     if (formElement.dataset.field === 'contact') {
