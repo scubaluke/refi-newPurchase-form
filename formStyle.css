@@ -8,6 +8,9 @@
   color: red;
   background-color: rebeccapurple;
 } */
+.nhp-link:hover {
+  color: white;
+}
 
 .progressBar {
   margin: 40px auto;

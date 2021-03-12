@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="formStyle.css">
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -16,6 +17,14 @@
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;600&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png"> -->
+    <link rel="apple-touch-icon" href="./img/championlogo.png" />
+
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
 </head>
 ​
 <body>
@@ -98,8 +107,8 @@
             <h2 class="text-center">Which type of home loan are you interested in?</h2>
             <div class="form-group text-center">
                 <button data-value="PP_REFI" data-slide="1" class="question green-btn">Refinance</button>
-
-                <button class="question green-btn">New Home Purchase</a></button>
+                   <a class="nhp-link green-btn" href="new-purchase.html">New Home Purchase</a>
+            
             </div>
         </div>
   <!-- form box 0 end -->
@@ -312,21 +321,21 @@
                 of the property</h2>
             <div class="form-group text-center">
                 <label class="slider-label">
-                    <input type="range" min="50000" max="2000000" value="500000" step="5000"
+                    <input type="range" min="50000" max="1500000" value="500000" step="5000"
                         class="slider form-control custom-space" id="EST_VAL" name="EST_VAL">
                 </label>
             </div>
-            <div id="myRangeTextContainer" class="text-center"><span id="EST_VALText">$500000</span></div>
+            <div id="myRangeTextContainer" class="text-center"><span id="EST_VALText">$500,000</span></div>
         
             <h1 class="text-center" style="font-size: 20px;margin-bottom:0px;">What is the remaining 1st
                 mortgage balance?</h1>
             <div class="form-group text-center">
                 <label class="slider-label">
-                    <input type="range" min="0" max="1000000" value="0" step="50000"
+                    <input type="range" min="10000" max="1000000" value="10000" step="50000"
                         class="slider form-control custom-space" id="BAL_ONE" name="BAL_ONE">
                 </label>
             </div>
-            <div id="myRangeTextContainer" class="text-center"><span id="BAL_ONEText">$0</span></div>
+            <div id="myRangeTextContainer" class="text-center"><span id="BAL_ONEText">$10,000</span></div>
 
             <div class="form-group text-center">
                 <button class="next green-btn">Continue</button>
@@ -901,6 +910,7 @@ Premier Partners and for SecureRights, parties calling on behalf of Champion Len
 
 
         <script src="./index.js"></script>
+        
         <script id="LeadiDscript" type="text/javascript">
             (function() {
             var s = document.createElement('script');
@@ -914,6 +924,7 @@ Premier Partners and for SecureRights, parties calling on behalf of Champion Len
             </script>
             <noscript><img src='//create.leadid.com/noscript.gif?lac=5a78319c-dbbd-54af-cb0a-a61a01c27aa9&lck=cd215e19-865f-3649-c858-0b6646c7cfa9&snippet_version=2' /></noscript>
 
+            
 </body>
 
 </html>
