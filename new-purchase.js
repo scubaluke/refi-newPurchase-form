@@ -29,7 +29,7 @@ function handleClick(e) {
     const nextFormElement = formElement.nextElementSibling
     const field = formElement.dataset.field
     const formValue = e.target.dataset.value;
-   console.log({ field }, { formValue })
+//    console.log({ field }, { formValue })
     const input = document.querySelector(`[name=${field}]`)
 
     // set the value to be submitted
