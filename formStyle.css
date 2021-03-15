@@ -202,6 +202,19 @@ form {
   text-align: center;
   box-sizing: border-box;
 }
+/* ! this class is for the new first BACK button */
+.gold-btn-1 {
+  background: rgb(165, 141, 78);
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 3px #333;
+  padding: 5px;
+  align-items: flex-start;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  box-sizing: border-box;
+}
 
 .free_service {
   background-color: rgb(232, 249, 246);
