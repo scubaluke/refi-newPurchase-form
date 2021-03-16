@@ -5,6 +5,13 @@ document.querySelector('#AFID').value = document.referrer.split('AFID=')[1] || '
 // THE  FORM ELEMENT 
 const form = document.querySelector('#lp_form')
 
+//loads spinner after submit is clicked
+$(document).ready(function () {
+    $(".submit").click(function () {
+        $("#pageloader").fadeIn();
+    });
+});
+
 
 // prevent default on enter key!!!!
 // form.addEventListener('keydown', preventSubmit)
