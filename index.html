@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width">
     <title>ChampionLender</title>
     <link href="mortgage.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="formStyle.css">
+    <link href="loader.css" rel="stylesheet" type="text/css" />
+    <link href="formStyle.css" rel="stylesheet" type="text/css" >
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
@@ -29,6 +30,13 @@
 </head>
 ​
 <body>
+    <div class="pageloader" id="pageloader">
+        <div class="loader-container">
+            <img src="img/load-gif.gif" alt="processing..." />
+            <h3>Processing...</h3>
+        </div>
+    </div>
+
     <header>
         <i class="fas fa-envelope" id="header-icon"></i><a href="#" id="header-info"> info@championlender.com</a>
         <i class="fas fa-map-marker-alt" id="header-icon"></i><a href="#" id="header-info"> 6900 Tavistock Lakes Blvd

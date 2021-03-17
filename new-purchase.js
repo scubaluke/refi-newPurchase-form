@@ -5,16 +5,8 @@ document.querySelector('#AFID').value = document.referrer.split('AFID=')[1] || '
 // THE  FORM ELEMENT 
 const form = document.querySelector('#lp_form')
 
-//loads spinner after submit is clicked
-$(document).ready(function () {
-    $(".submit").click(function () {
-        $("#pageloader").fadeIn();
-    });
-});
-
 
 // prevent default on enter key!!!!
-// form.addEventListener('keydown', preventSubmit)
 window.addEventListener('keydown', preventSubmit)
 function preventSubmit(e) {
     if (e.keyCode === 13) {
@@ -179,6 +171,8 @@ function sendSubmission(e) {
             phoneInput.value = simplifyPhone(phoneInput.value)
             form.phone_work.value = simplifyPhone(form.phone_work.value)
             form.phone_cell.value = simplifyPhone(form.phone_cell.value)
+            // add spinner 
+            document.querySelector('.pageloader').classList.add('show')
             form.submit()
         }
     }

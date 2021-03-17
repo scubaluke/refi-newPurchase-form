@@ -165,7 +165,8 @@ function simplifyPhone(number) {
             form.phone_home.value = simplifyPhone(form.phone_home.value)
             form.phone_work.value = simplifyPhone(form.phone_work.value)
             form.phone_cell.value = simplifyPhone(form.phone_cell.value)
-
+            // add spinner
+            document.querySelector('.pageloader').classList.add('show')
             form.submit()
         } 
     }
