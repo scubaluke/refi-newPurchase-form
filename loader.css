@@ -1,16 +1,7 @@
-/* #pageloader {
-  background: rgba(255, 255, 255, 0.8);
-  display: none;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  z-index: 9;
-} */
 .pageloader {
   display: none;
   justify-content: center;
   align-items: center;
-  position: absolute;
   background-color: rgba(255, 255, 255, 0.842);
   position: fixed;
   top: 0;
@@ -23,15 +14,4 @@
 }
 .pageloader.show {
   display: flex;
-}
-
-/* #pageloader img {
-  left: 50%;
-  margin-left: -32px;
-  margin-top: -32px;
-  position: absolute;
-  top: 50%;
-} */
-.loaded {
-  display: none;
 }
